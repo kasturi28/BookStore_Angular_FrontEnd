@@ -36,11 +36,16 @@
     cursor: pointer;
 }
 .cart-name{
-    margin-left: 30%;
-    margin-top: 12px;
-    cursor: pointer;
+    text-align: left;
+    font: normal normal normal 15px/18px Roboto;
+    letter-spacing: 0.45px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 .cart-logo{
-    width: 20%;
-    cursor:pointer;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    margin-right: 10%;
+    cursor: pointer;
 }

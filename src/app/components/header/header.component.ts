@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
   onBookStoreClick(){
     this.router.navigate([""]);
   }
+  
   onCartClick(){
     this.router.navigate(["cart"]);
   }
