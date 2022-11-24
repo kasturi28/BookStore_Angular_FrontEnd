@@ -13,11 +13,10 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onBookStoreClick(){
+  goHome(){
     this.router.navigate([""]);
   }
-  
-  onCartClick(){
+  goCart(){
     this.router.navigate(["cart"]);
   }
 

@@ -14,6 +14,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatRadioModule} from '@angular/material/radio';
+import { OrderComponent } from './components/order/order.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import {MatRadioModule} from '@angular/material/radio';
     HomeComponent,
     FooterComponent,
     HeaderComponent,
-    CartComponent
+    CartComponent,
+    OrderComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,22 +1,22 @@
 <mat-vertical-stepper>
     <mat-step label="My Cart">
         <div class="part1">
-            <div class="book-image"><img class="book-pic" src="../../../assets/book.png" alt=""></div>
+            <div class="book-image"><img class="book-summary" src="https://1.bp.blogspot.com/-tJ2k-lbWWbY/Wc1XeajGgoI/AAAAAAAAg_w/_M3IGrnbgYYeWb-CC7bXLctBEKuX-q_4ACLcBGAs/s1600/FrontDeskUPdateed.jpg" alt=""></div>
             <div>
-                <div class="book-title">Don't Make Me Think</div>
+                <div class="book-title">FRONT DESK</div>
                 <div class="auther-name">By Steve Krug</div>
-                <div class="book-price">Rs.1000</div>
+                <div class="book-price">Rs.350</div>
                 <div class="part2">
-                <img class="minus" style="height: 20px;" src="../../../assets/minus.jpg" alt="+">
-                <input  class="number" type="text" value="1">
-                <img class="plus" style="height: 20px" src="../../../assets/plus.jpg" alt="-">
+                <button class="minus" style="height: 20px;border: gray;  border-radius: 50px;" (click)="decrease()" >-</button>
+                <label  class="number" type="text"style="padding: 0 0 5px 5px;"> {{cartValue}} </label>
+                <button class="plus" style="height: 20px;border: gray;  border-radius: 50px;" (click)="incresase()" >+</button>
                 <span class="remove-text">Remove</span>
                 </div>    
             </div>
         </div>
-        <button mat-raised-button class="select-address" matStepperNext >PLACE ORDER</button>
+        <button mat-raised-button class="select-address" matStepperNext >Place Order</button>
     </mat-step>
-
+  
     <mat-step label="Customer Details">
         <div class="cust-detail">
             <div>
@@ -35,7 +35,7 @@
             <input class="text-input" type="text" name="landmark" placeholder="Landmark">
             </div>
             <div class="type">
-            Type
+            Type<br>
                 <mat-radio-group aria-label="Select an option">
                     <mat-radio-button value="Home">Home</mat-radio-button>
                     <mat-radio-button value="Office">Office</mat-radio-button>
@@ -43,24 +43,25 @@
                 </mat-radio-group>
             </div>
             <div>
-            <button mat-button class="back-btn" matStepperPrevious>Back</button>
-            <button mat-raised-button class="next-btn" matStepperNext >CONTINUE</button>
+            <button mat-button class="back-btn" matStepperPrevious> </button>
+            <button mat-raised-button class="next-btn" matStepperNext >Continue</button>
             </div>
         </div>
     </mat-step>
-
+  
     <mat-step label="Order Summary">
         <div class="payment">
-            <div class="book-image"><img class="book-summary" src="../../../assets/book/book4.jpeg" alt=""></div>
+            <div class="book-image">
+              <img class="book-summary" src="https://1.bp.blogspot.com/-tJ2k-lbWWbY/Wc1XeajGgoI/AAAAAAAAg_w/_M3IGrnbgYYeWb-CC7bXLctBEKuX-q_4ACLcBGAs/s1600/FrontDeskUPdateed.jpg" alt=""></div>
             <div>
-            <div class="book-title-summary">Don't make Me Think</div>
+            <div class="book-title-summary">FRONT DESK</div>
             <div class="auther-name-summary">By Steve Krug</div>
-            <div class="book-price-summary">Rs.1000</div>
+            <div class="book-price-summary">Rs.350</div>
             </div>
         </div>
         <div>
-        <button mat-button class="back-btn" matStepperPrevious>Back</button>
+        <button mat-button class="back-btn" matStepperPrevious> </button>
         <button mat-raised-button class="checkout-btn" matStepperNext (click)="onCheckout()">Checkout</button>
         </div>
     </mat-step>
-</mat-vertical-stepper>
+  </mat-vertical-stepper>

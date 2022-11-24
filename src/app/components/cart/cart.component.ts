@@ -12,8 +12,20 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  cartValue:number =0;
+  incresase(){
+    this.cartValue= this.cartValue+1;
+    this.ngOnInit();
+  }
+  decrease(){
+    if(this.cartValue == 0){
+      return;
+    }
+    this.cartValue= this.cartValue-1;
+    this.ngOnInit();
+  }
   onCheckout(){
-    this.router.navigate(["placed"]);
+    this.router.navigate(["order"]);
   }
 
 }
